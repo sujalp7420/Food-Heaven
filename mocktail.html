@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="FH2.css">
+<title>Mocktails Recipes</title>
+<style>
+    body {
+  background-image: url('mocktail.webp');
+  background-repeat: no-repeat;
+  background-size: cover; /* Scales to cover the entire viewport */
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  color: #333;
+}
+    .recipe-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgb(94 57 57 / 90%); /* Semi-transparent white background for content */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cuisine-title {
+      color: #e74c3c;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .recipe-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: rgb(15 40 34 / 80%); /* Semi-transparent white for recipe items */
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #3498db;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .recipe-details {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #fff;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    .recipe-details h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list,
+    .steps-list {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+</style>
+</head>
+<body>
+<div class="recipe-container">
+<h2 class="cuisine-title">Mocktails Recipes</h2>
+
+<!-- Virgin Mojito Recipe -->
+<div class="recipe-item">
+  <label for="virgin-mojito-toggle" class="item-name">Virgin Mojito</label>
+  <input type="checkbox" id="virgin-mojito-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>10 fresh mint leaves</li>
+  	<li>1 tablespoon sugar</li>
+  	<li>1/2 lime (cut into wedges)</li>
+  	<li>1 cup soda or sparkling water</li>
+  	<li>Ice cubes</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Muddle mint leaves, lime wedges, and sugar in a glass.</li>
+  	<li>Fill the glass with ice cubes.</li>
+  	<li>Pour soda over it and mix well.</li>
+  	<li>Garnish with mint leaves and serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Blue Lagoon Recipe -->
+<div class="recipe-item">
+  <label for="blue-lagoon-toggle" class="item-name">Blue Lagoon</label>
+  <input type="checkbox" id="blue-lagoon-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1 cup lemonade</li>
+  	<li>1 tablespoon blue curaçao syrup</li>
+  	<li>Ice cubes</li>
+  	<li>Lemon slice for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Fill a glass with ice cubes.</li>
+  	<li>Add blue curaçao syrup and lemonade.</li>
+  	<li>Stir well and garnish with a lemon slice.</li>
+  	<li>Serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Pina Colada Recipe -->
+<div class="recipe-item">
+  <label for="pina-colada-toggle" class="item-name">Pina Colada</label>
+  <input type="checkbox" id="pina-colada-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1/2 cup pineapple juice</li>
+  	<li>1/2 cup coconut milk</li>
+  	<li>1 tablespoon sugar</li>
+  	<li>Ice cubes</li>
+  	<li>Pineapple slice for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Blend pineapple juice, coconut milk, sugar, and ice cubes until smooth.</li>
+  	<li>Pour into a glass.</li>
+  	<li>Garnish with a pineapple slice.</li>
+  	<li>Serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Shirley Temple Recipe -->
+<div class="recipe-item">
+  <label for="shirley-temple-toggle" class="item-name">Shirley Temple</label>
+  <input type="checkbox" id="shirley-temple-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1 cup lemon-lime soda</li>
+  	<li>1 tablespoon grenadine syrup</li>
+  	<li>Ice cubes</li>
+  	<li>Maraschino cherry for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Fill a glass with ice cubes.</li>
+  	<li>Pour lemon-lime soda over the ice.</li>
+  	<li>Add grenadine syrup and stir gently.</li>
+  	<li>Garnish with a maraschino cherry and serve.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Strawberry Lemonade Recipe -->
+<div class="recipe-item">
+  <label for="strawberry-lemonade-toggle" class="item-name">Strawberry Lemonade</label>
+  <input type="checkbox" id="strawberry-lemonade-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1 cup fresh strawberries (blended)</li>
+  	<li>1/2 cup lemon juice</li>
+  	<li>2 tablespoons sugar</li>
+  	<li>1 cup cold water</li>
+  	<li>Ice cubes</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Blend strawberries with lemon juice and sugar.</li>
+  	<li>Add cold water and mix well.</li>
+  	<li>Pour over ice cubes in a glass.</li>
+  	<li>Serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Mango Tango Recipe -->
+<div class="recipe-item">
+  <label for="mango-tango-toggle" class="item-name">Mango Tango</label>
+  <input type="checkbox" id="mango-tango-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1/2 cup mango juice</li>
+  	<li>1/2 cup orange juice</li>
+  	<li>Ice cubes</li>
+  	<li>Orange slice for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Fill a glass with ice cubes.</li>
+  	<li>Pour mango juice and orange juice over the ice.</li>
+  	<li>Stir well and garnish with an orange slice.</li>
+  	<li>Serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Watermelon Cooler Recipe -->
+<div class="recipe-item">
+  <label for="watermelon-cooler-toggle" class="item-name">Watermelon Cooler</label>
+  <input type="checkbox" id="watermelon-cooler-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1 cup fresh watermelon juice</li>
+  	<li>1/2 cup coconut water</li>
+  	<li>Ice cubes</li>
+  	<li>Mint leaves for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Blend fresh watermelon and strain to get the juice.</li>
+  	<li>Pour the watermelon juice into a glass filled with ice cubes.</li>
+  	<li>Add coconut water and mix well.</li>
+  	<li>Garnish with mint leaves and serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Apple Fizz Recipe -->
+<div class="recipe-item">
+  <label for="apple-fizz-toggle" class="item-name">Apple Fizz</label>
+  <input type="checkbox" id="apple-fizz-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1/2 cup apple juice</li>
+  	<li>1/2 cup soda water</li>
+  	<li>1 tablespoon lemon juice</li>
+  	<li>Ice cubes</li>
+  	<li>Apple slice for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Fill a glass with ice cubes.</li>
+  	<li>Pour apple juice and lemon juice into the glass.</li>
+  	<li>Top up with soda water and stir gently.</li>
+  	<li>Garnish with an apple slice and serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Kiwi Punch Recipe -->
+<div class="recipe-item">
+  <label for="kiwi-punch-toggle" class="item-name">Kiwi Punch</label>
+  <input type="checkbox" id="kiwi-punch-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1 cup kiwi juice (blended fresh kiwi)</li>
+  	<li>1/2 cup pineapple juice</li>
+  	<li>Ice cubes</li>
+  	<li>Kiwi slice for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Blend fresh kiwi and strain to extract juice.</li>
+  	<li>Pour kiwi juice and pineapple juice into a glass filled with ice cubes.</li>
+  	<li>Stir well and garnish with a kiwi slice.</li>
+  	<li>Serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+<!-- Orange Sunrise Recipe -->
+<div class="recipe-item">
+  <label for="orange-sunrise-toggle" class="item-name">Orange Sunrise</label>
+  <input type="checkbox" id="orange-sunrise-toggle" class="toggle-checkbox">
+  <div class="recipe-details">
+	<h3>Ingredients:</h3>
+	<ul class="ingredients-list">
+  	<li>1/2 cup orange juice</li>
+  	<li>1/2 cup cranberry juice</li>
+  	<li>Ice cubes</li>
+  	<li>Orange slice for garnish</li>
+	</ul>
+	<h3>Instructions:</h3>
+	<ol class="steps-list">
+  	<li>Fill a glass with ice cubes.</li>
+  	<li>Pour orange juice and then slowly add cranberry juice to create a layered effect.</li>
+  	<li>Garnish with an orange slice.</li>
+  	<li>Serve chilled.</li>
+	</ol>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
+
+

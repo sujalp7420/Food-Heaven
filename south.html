@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FH2.css">
+    <title>South Indian Recipes</title>
+    <style>
+       body {
+  background-image: url('southback.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Scales to cover the entire viewport */
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  color: #333;
+}
+    .recipe-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgb(94 57 57 / 90%); /* Semi-transparent white background for content */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cuisine-title {
+      color: #e74c3c;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .recipe-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: rgb(15 40 34 / 80%); /* Semi-transparent white for recipe items */
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #3498db;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .recipe-details {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #fff;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    .recipe-details h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list,
+    .steps-list {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+    </style>
+</head>
+<body>
+    <div class="recipe-container">
+        <h2 class="cuisine-title">South Indian Cuisine</h2>
+
+        <div class="recipe-item">
+            <label for="idli-toggle" class="item-name">Idli</label>
+            <input type="checkbox" id="idli-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Rice</li>
+                    <li>Urad dal (black gram)</li>
+                    <li>Salt</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Soak rice and urad dal separately.</li>
+                    <li>Grind into a smooth batter.</li>
+                    <li>Ferment overnight.</li>
+                    <li>Steam in idli molds.</li>
+                    <li>Serve with sambar and chutney.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="dosa-toggle" class="item-name">Dosa</label>
+            <input type="checkbox" id="dosa-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Rice</li>
+                    <li>Urad dal (black gram)</li>
+                    <li>Salt</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Soak rice and urad dal separately.</li>
+                    <li>Grind into a smooth batter.</li>
+                    <li>Ferment overnight.</li>
+                    <li>Spread batter on a hot griddle.</li>
+                    <li>Cook until crispy.</li>
+                    <li>Serve with sambar and chutney.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="sambar-toggle" class="item-name">Sambar</label>
+            <input type="checkbox" id="sambar-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Toor dal (pigeon pea lentils)</li>
+                    <li>Tamarind extract</li>
+                    <li>Vegetables (drumstick, brinjal, etc.)</li>
+                    <li>Sambar powder</li>
+                    <li>Mustard seeds</li>
+                    <li>Curry leaves</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Cook toor dal.</li>
+                    <li>Add vegetables and tamarind extract.</li>
+                    <li>Add sambar powder and simmer.</li>
+                    <li>Temper with mustard seeds and curry leaves.</li>
+                    <li>Serve with idli or dosa.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="upma-toggle" class="item-name">Upma</label>
+            <input type="checkbox" id="upma-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Semolina (rava)</li>
+                    <li>Mustard seeds</li>
+                    <li>Urad dal (black gram)</li>
+                    <li>Curry leaves</li>
+                    <li>Onions</li>
+                    <li>Green chilies</li>
+                    <li>Vegetables (carrots, peas)</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Roast semolina.</li>
+                    <li>Temper mustard seeds, urad dal, and curry leaves.</li>
+                    <li>Add onions, green chilies, and vegetables.</li>
+                    <li>Add roasted semolina and water.</li>
+                    <li>Cook until thick.</li>
+                    <li>Serve hot.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="pongal-toggle" class="item-name">Pongal</label>
+            <input type="checkbox" id="pongal-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Rice</li>
+                    <li>Moong dal (split yellow lentils)</li>
+                    <li>Ghee</li>
+                    <li>Cashews</li>
+                    <li>Raisins</li>
+                    <li>Ginger</li>
+                    <li>Pepper</li>
+                    <li>Cumin seeds</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Cook rice and moong dal together.</li>
+                    <li>Temper ghee, cashews, raisins, ginger, pepper, and cumin seeds.</li>
+                    <li>Add to the cooked rice and dal.</li>
+                    <li>Serve hot.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="uttapam-toggle" class="item-name">Uttapam</label>
+            <input type="checkbox" id="uttapam-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Dosa batter</li>
+                    <li>Onions, chopped</li>
+                    <li>Tomatoes, chopped</li>
+                    <li>Green chilies, chopped</li>
+                    <li>Coriander leaves, chopped</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Prepare dosa batter.</li>
+                    <li>Add chopped onions, tomatoes, green chilies, and coriander leaves to the batter.</li>
+                    <li>Pour batter onto a hot griddle.</li>
+                    <li>Cook until golden brown on both sides.</li>
+                    <li>Serve with chutney or sambar.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="avial-toggle" class="item-name">Avial</label>
+            <input type="checkbox" id="avial-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Mixed vegetables (carrots, drumsticks, beans, etc.)</li>
+                    <li>Coconut oil</li>
+                    <li>Curd</li>
+                    <li>Coconut, grated</li>
+                    <li>Green chilies</li>
+                    <li>Curry leaves</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Cut vegetables into long pieces.</li>
+                    <li>Cook vegetables with coconut oil and curd.</li>
+                    <li>Add grated coconut, green chilies, and curry leaves.</li>
+                    <li>Simmer and serve.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="rasam-toggle" class="item-name">Rasam</label>
+            <input type="checkbox" id="rasam-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Tamarind extract</li>
+                    <li>Tomatoes</li>
+                    <li>Rasam powder</li>
+                    <li>Mustard seeds</li>
+                    <li>Curry leaves</li>
+                    <li>Coriander leaves</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Extract tamarind pulp.</li>
+                    <li>Add tomatoes and rasam powder.</li>
+                    <li>Boil and simmer.</li>
+                    <li>Temper with mustard seeds and curry leaves.</li>
+                    <li>Garnish with coriander leaves.</li>
+                    <li>Serve hot with rice.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

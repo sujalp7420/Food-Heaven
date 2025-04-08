@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Collection</title>
+    <link rel="stylesheet" href="FH2.css">
+    <style>
+        /* Make the background image cover the entire page */
+        body {
+            background-image: url('blueberry-juice.jpg');
+            background-size: cover; /* Cover the entire page */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed; /* Keep the background fixed during scroll */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Ensure the body takes up the full height of the viewport */
+        }
+
+        /* Styling for the recipe container */
+        .recipe-container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: white; /* Text color for contrast */
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 50px auto; /* Center the container on the page */
+        }
+
+        /* Title styling */
+        .title {
+            font-size: 2.8em; /* Slightly larger title */
+            margin-bottom: 25px;
+            color: #40ffea; /* A more inviting title color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+        }
+
+        /* Cuisine link styling */
+        .cuisine-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #e2bd37; /* White text to stand out against the background */
+        }
+
+        /* Change color on hover */
+        .cuisine-title:hover {
+            color: #a27d95; /* Tomato red color when hovered */
+        } 
+    </style>
+</head>
+<body>
+    <div class="recipe-container">
+        <h1 class="title">Recipe Collection</h1>
+        <a href="chinese.html"><h2 class="cuisine-title">1. Chinese Cuisine</h2></a>
+        <a href="punjabi.html"><h2 class="cuisine-title">2. Punjabi Cuisine</h2></a>
+        <a href="gujarati.html"><h2 class="cuisine-title">3. Gujarati Cuisine</h2></a>
+        <a href="south.html"><h2 class="cuisine-title">4. South-Indian Cuisine</h2></a>
+        <a href="bengali.html"><h2 class="cuisine-title">5. Bengali Cuisine</h2></a>
+        <a href="italian.html"><h2 class="cuisine-title">6. Italian Cuisine</h2></a>
+        <a href="mocktail.html"><h2 class="cuisine-title">7. Mocktail Cuisine</h2></a>
+        <a href="deserts.html"><h2 class="cuisine-title">8. Desert Cuisine</h2></a>
+        <a href="starter.html"><h2 class="cuisine-title">9. Starter Cuisine</h2></a>
+    </div>
+</body>
+</html>

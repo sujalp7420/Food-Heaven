@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FH2.css">
+    <title>Bengali Cuisine</title>
+    <style>
+       body {
+  background-image: url('bengali.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Scales to cover the entire viewport */
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  color: #333;
+}
+    .recipe-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgb(94 57 57 / 90%); /* Semi-transparent white background for content */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cuisine-title {
+      color: #e74c3c;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .recipe-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: rgb(15 40 34 / 80%); /* Semi-transparent white for recipe items */
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #3498db;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .recipe-details {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #fff;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    .recipe-details h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list,
+    .steps-list {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+        input[type="checkbox"] {
+            display: none;
+        }
+        input[type="checkbox"]:checked + .recipe-details {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="recipe-container">
+        <h2 class="cuisine-title">Bengali Cuisine</h2>
+
+        <div class="recipe-item">
+            <label for="machher-jhol-toggle" class="item-name">Machher Jhol (Fish Curry)</label>
+            <input type="checkbox" id="machher-jhol-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Fish pieces</li>
+                    <li>Potatoes, cubed</li>
+                    <li>Tomatoes, chopped</li>
+                    <li>Ginger-garlic paste</li>
+                    <li>Turmeric powder</li>
+                    <li>Red chili powder</li>
+                    <li>Mustard oil</li>
+                    <li>Cumin seeds</li>
+                    <li>Coriander leaves</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Fry fish pieces lightly.</li>
+                    <li>Temper cumin seeds in mustard oil.</li>
+                    <li>Add ginger-garlic paste and sauté.</li>
+                    <li>Add potatoes, tomatoes, and spices.</li>
+                    <li>Add water and fish pieces.</li>
+                    <li>Simmer until cooked.</li>
+                    <li>Garnish with coriander leaves.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="aloo-posto-toggle" class="item-name">Aloo Posto (Potato with Poppy Seeds)</label>
+            <input type="checkbox" id="aloo-posto-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Potatoes, cubed</li>
+                    <li>Poppy seeds paste</li>
+                    <li>Green chilies, slit</li>
+                    <li>Mustard oil</li>
+                    <li>Turmeric powder</li>
+                    <li>Salt</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Fry potatoes lightly.</li>
+                    <li>Add poppy seeds paste, green chilies, and spices.</li>
+                    <li>Add water and simmer until cooked.</li>
+                    <li>Serve hot with rice.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="shorshe-ilish-toggle" class="item-name">Shorshe Ilish (Hilsa in Mustard Sauce)</label>
+            <input type="checkbox" id="shorshe-ilish-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Hilsa fish pieces</li>
+                    <li>Mustard seeds paste</li>
+                    <li>Green chilies, slit</li>
+                    <li>Turmeric powder</li>
+                    <li>Mustard oil</li>
+                    <li>Salt</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Marinate fish with turmeric and salt.</li>
+                    <li>Mix mustard paste with turmeric and salt.</li>
+                    <li>Layer fish and mustard mixture in a pan.</li>
+                    <li>Add green chilies and mustard oil.</li>
+                    <li>Cover and cook until done.</li>
+                    <li>Serve with rice.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="cholar-dal-toggle" class="item-name">Cholar Dal (Lentil with Coconut)</label>
+            <input type="checkbox" id="cholar-dal-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Chana dal (split chickpeas)</li>
+                    <li>Coconut, grated</li>
+                    <li>Ghee</li>
+                    <li>Cinnamon stick</li>
+                    <li>Cardamom pods</li>
+                    <li>Bay leaf</li>
+                    <li>Raisins</li>
+                    <li>Cashews</li>
+                    <li>Sugar</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Cook chana dal.</li>
+                    <li>Temper spices in ghee.</li>
+                    <li>Add coconut, raisins, and cashews.</li>
+                    <li>Add cooked dal and sugar.</li>
+                    <li>Simmer and serve.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="mishti-doi-toggle" class="item-name">Mishti Doi (Sweet Yogurt)</label>
+            <input type="checkbox" id="mishti-doi-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>Milk</li>
+                    <li>Yogurt culture</li>
+                    <li>Sugar</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Caramelize sugar.</li>
+                    <li>Boil milk and add caramelized sugar.</li>
+                    <li>Cool slightly and add yogurt culture.</li>
+                    <li>Set in earthen pots and let it set.</li>
+                    <li>Chill before serving.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-item">
+            <label for="luchi-toggle" class="item-name">Luchi (Fried Bread)</label>
+            <input type="checkbox" id="luchi-toggle" class="toggle-checkbox">
+            <div class="recipe-details">
+                <h3>Ingredients:</h3>
+                <ul class="ingredients-list">
+                    <li>All-purpose flour</li>
+                    <li>Water</li>
+                    <li>Salt</li>
+                    <li>Oil for frying</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol class="steps-list">
+                    <li>Knead flour with water and salt.</li>
+                    <li>Make small balls and roll into small circles.</li>
+                    <li>Deep fry until golden brown.</li>
+                    <li>Serve hot.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
